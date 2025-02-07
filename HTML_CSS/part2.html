@@ -7,29 +7,61 @@
   </head>
   <body>
     <h3>Forms</h3>
-    <form action="action.html">
-      <label for="First Name">First Name:</label>
-      <input type="text" placeholder="Enter your First Name" required /><br />
-      <label for="Last Name">First Name:</label>
-      <input type="text" placeholder="Enter your Last Name" required /><br />
-      <label for="email">Email:</label>
-      <input type="email" value="@sjit.ac.in" required /><br />
-      <label for="pwd">Password:</label>
-      <input type="password" placeholder="Enter your Password" required /><br />
-      <label for="cnfpwd">Confirm Password:</label>
-      <input type="password" placeholder="Enter your Password" required /><br />
-      <label for="DOB">Date of Birth:</label>
-      <input type="date" placeholder="Enter your DOB" required /><br />
-      <label for="Ph. No.">Mobile Number:</label>
-      <input type="tel" placeholder="Enter your Mobile Number" required /><br />
-      <label for="Gender">Gender:</label>
-      <input type="radio" name="Gen">male
-      <input type="radio" name="Gen">female
-      <input type="radio" name="Gen">others <br>
-      <button type="submit">Signup</button>
-    </form>
-    <p>Already Having an Account ? <a>login</a></p>
+    <table>
+      <form action="action.html">
+        <tr>
+          <td><label for="First Name">First Name:</label></td>
+          <td>
+            <input type="text" placeholder="Enter your First Name" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Last Name">First Name:</label></td>
+          <td>
+            <input type="text" placeholder="Enter your Last Name" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" value="@sjit.ac.in" required /></td>
+        </tr>
+        <tr>
+          <td><label for="pwd">Password:</label></td>
+          <td>
+            <input type="password" placeholder="Enter your Password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cnfpwd">Confirm Password:</label></td>
+          <td>
+            <input type="password" placeholder="Enter your Password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="DOB">Date of Birth:</label></td>
+          <td><input type="date" placeholder="Enter your DOB" required /></td>
+        </tr>
+        <tr>
+          <td><label for="Ph. No.">Mobile Number:</label></td>
+          <td>
+            <input type="tel" placeholder="Enter your Mobile Number" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Gender">Gender:</label></td>
+          <td>
+            <input type="radio" name="Gen" />male
+            <input type="radio" name="Gen" />female
+            <input type="radio" name="Gen" />others
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit">Signup</button></td>
+        </tr>
+      </form>
+    </table>
+    <p>Already Having an Account ? <a href="action.html">login</a></p>
     <hr />
-    <a href="./index.html">To Go Back</a>
+    <a href="./index.html">Go Back</a>
   </body>
 </html>
