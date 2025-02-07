@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .list-item::before {
+          content: "•"; 
+          color: black;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+        }
+      </style>
 </head>
 <body>
     <h1>Learning Git and GitHub</h1>
     <h1>This is the pull cmd</h1>
     <h1>This is a Sample Insert</h1>
-    <section>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Education</li>
-        <li>Projects</li>
-        <li>Internship</li>
-        <li>Achievements</li>
-    </section>
+    
+        <div class="list-item">About Me</div>
+        <div class="list-item">Skills</div>
+        <div class="list-item">Education</div>
+        <div class="list-item">Projects</div>
+        
 </body>
 </html>
