@@ -1,0 +1,24 @@
+.case_1{
+    background-color: chocolate;
+    height: 600px;
+    width: 500px;
+}
+
+.case_2{
+    background-color: burlywood;
+    height: 500px;
+    width: 600px;
+}
+
+ol{
+    margin-top: 100px;
+    list-style-type: lower-roman;
+}
+
+*{
+    background-color: coral;
+}
+
+p{
+    background-color: aliceblue;
+}
