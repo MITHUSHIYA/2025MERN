@@ -1,0 +1,14 @@
+.float-left{
+    float: left;
+    margin: 10px;
+}
+
+.float-right{
+    float: right;
+    margin: 10px;
+}
+
+img{
+    border: solid 30px;
+    opacity: 0.5;
+}

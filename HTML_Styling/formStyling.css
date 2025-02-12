@@ -1,0 +1,23 @@
+/*Styling for specific field*/
+input[type=number]{
+    border: 2px solid purple;
+    border-radius: 30px;
+    
+}
+
+/*Styling for all fields*/
+input{
+    border: 2px solid blue;
+    margin: 10px;
+    
+}
+
+button{
+    float: left;
+    margin: 25px;
+}
+
+button:hover{
+    background-color: darksalmon;
+    color: darkgreen;
+}
