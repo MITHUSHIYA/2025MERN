@@ -1,6 +1,8 @@
+
 .float-left{
     float: left;
     margin: 10px;
+    opacity: 1;
 }
 
 .float-right{
@@ -9,6 +11,7 @@
 }
 
 img{
-    border: solid 30px;
-    opacity: 0.5;
+    border: solid 30px ;
+    background-color: rgba(0,0,0, 0.7);
 }
+ 
