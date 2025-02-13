@@ -1,115 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transitions and Animations</title>
-    <link rel="stylesheet" href="transitionANDanimations.css">
-
-    <style>
-
-        @keyframes animationDiv {
-            from{
-                background-color: brown;
-            }
-            to{
-                background-color: blueviolet;
-            }
-        }
-
-        @keyframes animation_fading{
-            0%{
-                opacity: 1;
-            }
-            25%{
-                opacity: 0.75;
-            }
-            50%{
-                opacity: 0.5;
-            }
-            75%{
-                opacity: 0.25;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-            
-        @keyframes random{
-            0%{
-                background-color: blue;
-                top: 0px;
-                left: 0px;
-            }
-            25%{
-                background-color: aqua;
-                top: 0px;
-                left: 100px;
-            }
-            
-            75%{
-                background-color: blueviolet;
-                top: 100px;
-                left: 100px;
-            }
-            100%{
-                background-color: cadetblue;
-                top: 100px;
-                left: 0px;
-            }
-        }
-
-        .transition{
-            color: chartreuse;
-            background-color: blueviolet;
-            transition:background-color 5s, padding 5s, color 5s, width 10s, heights 10s, transform 1s;
-        }
-
-        .transition:hover{
-            background-color: chartreuse;
-            color: blueviolet;
-            padding: 30px;
-            height: 100px;
-            width: 300px;
-            transform: rotate(360deg);
-        }
-
-        .animation{
-            animation-name: animationDiv;
-            background-color: aquamarine;
-            height: 100px;
-            width: 100px;
-            animation-duration: 5s;
-            animation-iteration-count: 5; /* infinte to keep running the animation*/
-        }
-
-        .animation-fade{
-            animation-name: animation_fading;
-            background-color: blue;
-            height: 100px;
-            width: 100px;
-            animation-duration: 5s;
-            animation-iteration-count: 5;
-        }
-
-        .random-animation{
-            animation-duration: 5s;
-            animation-name: random;
-            animation-iteration-count: infinite;
-            height: 100px;
-            width: 100px;
-            position: relative; /*You can try various position here [static(default),relative,absolute,etc...] */        }
-    </style>
-
-</head>
-<body>
+    <link rel="stylesheet" href="transitionANDanimations.css" />
+  </head>
+  <body>
     <h1>This is transition</h1>
     <h1 class="transition">This is a Transition Example.</h1>
     <h1>This is Animations</h1>
     <div class="animation">Animations</div>
-    <br><br>
+    <br /><br />
     <div class="animation-fade">Fading</div>
-    <br><br>
+    <br /><br />
     <div class="random-animation">Random Animation</div>
-</body>
+  </body>
 </html>
