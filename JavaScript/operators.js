@@ -45,3 +45,6 @@ console.log(a^b);
 console.log(~1);
 console.log(a>>4);
 console.log(a<<4);
+console.log(8<<1);
+console.log(1>>1);
+console.log(159>>2);
