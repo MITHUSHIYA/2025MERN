@@ -4,7 +4,7 @@ Conditional Statement
 
 Looping Statement
 1.while
-2.do....while
+2.do...while
 3.for(;;) // use "let" to assign variables;
 4.forin
 5.forof
@@ -68,11 +68,13 @@ for(i of Object.keys(object1)){
     console.log(object1.i);
 }
 
-for({key,value} of Object.entries(object1)){ // correct brackets to be used is {}
+for({key,value} of Object.entries(object1)){ // correct brackets to be used is []
     console.log(key,value);
 }
 
-*/
+for([key,value] of Object.entries(object1)){ 
+    console.log(key,value);
+}
 
 //forEach loop
 
@@ -91,11 +93,11 @@ object1 = {
     
 } 
 
-/*
+
 object1.forEach((element) => {
     console.log(element):       // will give error;
 })
-    */
+    
 
 Object.keys(object1).forEach((element) => {
     console.log(element);
@@ -110,3 +112,6 @@ console.log();
 Object.entries(object1).forEach((key)=>{
     console.log(key);
 })
+
+*/
+
