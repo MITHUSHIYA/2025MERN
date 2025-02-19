@@ -36,7 +36,7 @@ asAw();
 //Instagram console Demo for post, like, comment, share
 
 likeCode = async () => {
-  return new Promise((likePost) => {
+  return new Promise((likePost,unlikePost) => {
     setTimeout(() => {
       likePost("Liked the Post successfully");
     }, 5000);
