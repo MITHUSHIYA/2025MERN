@@ -4,7 +4,11 @@ import Contact from "./components/FunctionalComponents/Contact";
 import Gallery from "./components/FunctionalComponents/Gallery";
 import Signup from "./components/FunctionalComponents/Signup";
 import Navbar from "./components/FunctionalComponents/Navbar";
-import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect"
+import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect";
+import Login from "./components/FunctionalComponents/Login";
+import UseEffectAPI from "./components/FunctionalComponents/Hooks/useEffectAPI";
+import UseRef from "./components/FunctionalComponents/Hooks/UseRef";
+import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,6 +27,10 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/use-effect" element={<UseEffect />}></Route>
+            <Route path="/login" element={<Login/>}></Route>
+            <Route path="/use-effect-api" element={<UseEffectAPI />}></Route>
+            <Route path='/use-ref' element={<UseRef/>}></Route>
+            <Route path="/use-memo" element={<UseMemo/>}></Route>
           </Routes>
         </BrowserRouter>
       </main>

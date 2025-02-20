@@ -18,8 +18,8 @@ function About() {
         <h3>The updated state value :: {num}</h3>
         <button onClick={() => setNum(num+1)}>+</button>
         {/*here the autonomous func. [()=>] act as control*/}
+        <button onDoubleClick={()=>setNum(initialVal)}>Reset</button>
         <br />
-        <input type="text" placeholder="Enter a string"></input>
       </div>
     );
   }

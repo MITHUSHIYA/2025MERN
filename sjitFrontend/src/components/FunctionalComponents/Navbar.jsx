@@ -23,6 +23,15 @@ const Navbar = () => {
             <li>
               <Link to="/use-effect">useEffect</Link>
             </li>
+            <li>
+              <Link to='/use-effect-api'>useEffectAPI</Link>
+            </li>
+            <li>
+              <Link to='/use-ref'>useRef</Link>
+            </li>
+            <li>
+              <Link to='/use-memo'>useMemo</Link>
+            </li>
           </ol>
         </div>
         <li>
