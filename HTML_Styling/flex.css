@@ -23,18 +23,39 @@ nav {
   border-radius: 10px;
 }
 
-ol {
-  display: contents;
-  list-style: none;
-}
-
 header {
   background-color: blueviolet;
 }
 
-.dropdown {
-  position: absolute;
-  background-color: brown;
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content{
+  display: none;
+  z-index: 1;
+  min-width: 100%;
+  border: solid;
+  align-content: center;
+}
+
+.drop-content li{
+    list-style: none;
+    display: block;
+    
+}
+
+.dropdown:hover .drop-content{
+  display: block;
+  background-color: aliceblue;
+  color: cadetblue;
+  border-radius: 10px;
+}
+
+.drop-content li:hover{
+  background-color: aqua;
+  color: blue;
 }
 
 @media screen and (max-width: 600px) {

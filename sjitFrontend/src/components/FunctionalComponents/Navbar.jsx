@@ -14,15 +14,23 @@ const Navbar = () => {
         <li>
           <Link to="/gallery">Gallery</Link>
         </li>
-        <div>
-          <span>Hooks</span>
-          <ol>
-            <li><Link to='/use-state'>useState</Link></li>
-            <li><Link to='/use-effect'>useEffect</Link></li>
+        <div class="dropdown">
+          <span class="drop-btn">Hooks</span>
+          <ol class="drop-content">
+            <li>
+              <Link to="/use-state">useState</Link>
+            </li>
+            <li>
+              <Link to="/use-effect">useEffect</Link>
+            </li>
           </ol>
         </div>
-        <li><Link to={'/contact'}>Contact</Link></li>
-        <li><Link to = '/signup'>Signup</Link></li>
+        <li>
+          <Link to={"/contact"}>Contact</Link>
+        </li>
+        <li>
+          <Link to="/signup">Signup</Link>
+        </li>
       </nav>
     </header>
   );
