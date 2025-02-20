@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
 
-function slowFunction(num){
-    for(var i=0;i<10000;i++){}//here if i<10000000000 then we observe that the page loading is slow 
-    return num*2;
+function slowFunction(num) {
+  for (var i = 0; i < 100000000; i++) {} //here if i<10000000000 then we observe that the page loading is slow
+  return num * 2;
 }
 
 const UseMemo = () => {
@@ -12,6 +12,9 @@ const UseMemo = () => {
     backgroundColor: theme ? "black" : "white",
     color: theme ? "white" : "black",
   };
+  var doublingOfNum = useMemo(() => {
+    return slowFunction(number);
+  });
   return (
     <>
       <div style={styling}>
@@ -24,7 +27,7 @@ const UseMemo = () => {
           onChange={(e) => setNumber(e.target.value)}
         />
         <h2>The number is {number}</h2>
-        <h2>The number is {slowFunction(number)}</h2>
+        <h2>The number is {doublingOfNum}</h2>
       </div>
     </>
   );

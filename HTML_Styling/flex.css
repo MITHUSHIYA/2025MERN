@@ -27,12 +27,12 @@ header {
   background-color: blueviolet;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.drop-content{
+.drop-content {
   display: none;
   z-index: 1;
   min-width: 100%;
@@ -40,20 +40,20 @@ header {
   align-content: center;
 }
 
-.drop-content li{
-    list-style: none;
-    display: block;
-    
+.drop-content li {
+  list-style: none;
+  display: block;
+  padding: 0;
 }
 
-.dropdown:hover .drop-content{
+.dropdown:hover .drop-content {
   display: block;
   background-color: aliceblue;
   color: cadetblue;
   border-radius: 10px;
 }
 
-.drop-content li:hover{
+.drop-content li:hover {
   background-color: aqua;
   color: blue;
 }
