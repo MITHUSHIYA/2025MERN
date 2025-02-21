@@ -11,7 +11,7 @@ import UseRef from "./components/FunctionalComponents/Hooks/UseRef";
 import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo";
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback";
 import UseMemoize from "./components/FunctionalComponents/UseMemoize";
-import HoC from "./components/FunctionalComponents/HoC/Hoc";
+import HoC from "./components/FunctionalComponents/HoC/HoC";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
