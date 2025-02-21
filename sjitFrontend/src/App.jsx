@@ -9,6 +9,9 @@ import Login from "./components/FunctionalComponents/Login";
 import UseEffectAPI from "./components/FunctionalComponents/Hooks/useEffectAPI";
 import UseRef from "./components/FunctionalComponents/Hooks/UseRef";
 import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo";
+import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback";
+import UseMemoize from "./components/FunctionalComponents/UseMemoize";
+import HoC from "./components/FunctionalComponents/HoC/Hoc";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
             <Route path="/use-effect-api" element={<UseEffectAPI />}></Route>
             <Route path='/use-ref' element={<UseRef/>}></Route>
             <Route path="/use-memo" element={<UseMemo/>}></Route>
+            <Route path="/use-callback" element={<UseCallback/>}></Route>
+            <Route path="/use-memoize" element={<UseMemoize/>}></Route>
+            <Route path="/hoc" element={<HoC/>}></Route>
           </Routes>
         </BrowserRouter>
       </main>
