@@ -43,6 +43,17 @@ const Navbar = () => {
         <li>
           <Link to="/hoc">HoC</Link>
         </li>
+        <div class="dropdown">
+          <span>Memoization</span>
+          <ol class="drop-content">
+            <li>
+              <Link to="/memo">Memo</Link>
+            </li>
+            <li>
+              <Link to="/lazy-loading">LazyLoading</Link>
+            </li>
+          </ol>
+        </div>
         <li>
           <Link to={"/contact"}>Contact</Link>
         </li>

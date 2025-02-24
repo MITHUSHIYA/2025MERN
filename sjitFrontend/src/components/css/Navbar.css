@@ -13,12 +13,15 @@ nav {
 }
 
 .drop-content {
+  top: 3px;
+  position: absolute;
   display: none;
   z-index: 1;
   min-width: 100%;
   border: solid;
   align-content: center;
-  padding: 0;
+  padding: 10px;
+
 }
 
 .drop-content li {

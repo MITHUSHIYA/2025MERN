@@ -12,6 +12,8 @@ import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo";
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback";
 import UseMemoize from "./components/FunctionalComponents/UseMemoize";
 import HoC from "./components/FunctionalComponents/HoC/HoC";
+import Memo from "./components/FunctionalComponents/Memoization/Memo";
+import LazyLoadingAndSuspense from "./components/FunctionalComponents/Memoization/LazyLoadingAndSuspense";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -30,13 +32,15 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/use-effect" element={<UseEffect />}></Route>
-            <Route path="/login" element={<Login/>}></Route>
+            <Route path="/login" element={<Login />}></Route>
             <Route path="/use-effect-api" element={<UseEffectAPI />}></Route>
-            <Route path='/use-ref' element={<UseRef/>}></Route>
-            <Route path="/use-memo" element={<UseMemo/>}></Route>
-            <Route path="/use-callback" element={<UseCallback/>}></Route>
-            <Route path="/use-memoize" element={<UseMemoize/>}></Route>
-            <Route path="/hoc" element={<HoC/>}></Route>
+            <Route path="/use-ref" element={<UseRef />}></Route>
+            <Route path="/use-memo" element={<UseMemo />}></Route>
+            <Route path="/use-callback" element={<UseCallback />}></Route>
+            <Route path="/use-memoize" element={<UseMemoize />}></Route>
+            <Route path="/hoc" element={<HoC />}></Route>
+            <Route path="/memo" element={<Memo />}></Route>
+            <Route path="/lazy-loading" element={<LazyLoadingAndSuspense/>}></Route>
           </Routes>
         </BrowserRouter>
       </main>
