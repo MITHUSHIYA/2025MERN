@@ -15,6 +15,7 @@ import HoC from "./components/FunctionalComponents/HoC/HoC";
 import Memo from "./components/FunctionalComponents/Memoization/Memo";
 import LazyLoadingAndSuspense from "./components/FunctionalComponents/Memoization/LazyLoadingAndSuspense";
 import CoE from "./components/FunctionalComponents/ContextAPI/CoE";
+import Exams from "./components/FunctionalComponents/PropDrilling/Exams";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/memo" element={<Memo />}></Route>
             <Route path="/lazy-loading" element={<LazyLoadingAndSuspense />}></Route>
             <Route path="/res" element={<CoE />}></Route>
+            <Route path="/propdrilling" element={<Exams mark={'10'}/>}></Route>
           </Routes>
         </BrowserRouter>
       </main>

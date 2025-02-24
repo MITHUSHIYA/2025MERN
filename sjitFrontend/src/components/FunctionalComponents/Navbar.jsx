@@ -52,6 +52,9 @@ const Navbar = () => {
             <li>
               <Link to="/lazy-loading">LazyLoading</Link>
             </li>
+            <li>
+              <Link to="/propdrilling">PropDrilling</Link>
+            </li>
           </ol>
         </div>
         <li>
