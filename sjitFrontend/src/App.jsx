@@ -14,6 +14,7 @@ import UseMemoize from "./components/FunctionalComponents/UseMemoize";
 import HoC from "./components/FunctionalComponents/HoC/HoC";
 import Memo from "./components/FunctionalComponents/Memoization/Memo";
 import LazyLoadingAndSuspense from "./components/FunctionalComponents/Memoization/LazyLoadingAndSuspense";
+import CoE from "./components/FunctionalComponents/ContextAPI/CoE";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,10 +24,7 @@ function App() {
         <BrowserRouter>
           <Navbar></Navbar>
           <Routes>
-            <Route
-              path="/"
-              element={<Home msg="Hello," msg1="Welcome"></Home>}
-            ></Route>
+            <Route path="/" element={<Home msg="Hello," msg1="Welcome"></Home>}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
@@ -40,7 +38,8 @@ function App() {
             <Route path="/use-memoize" element={<UseMemoize />}></Route>
             <Route path="/hoc" element={<HoC />}></Route>
             <Route path="/memo" element={<Memo />}></Route>
-            <Route path="/lazy-loading" element={<LazyLoadingAndSuspense/>}></Route>
+            <Route path="/lazy-loading" element={<LazyLoadingAndSuspense />}></Route>
+            <Route path="/res" element={<CoE />}></Route>
           </Routes>
         </BrowserRouter>
       </main>
