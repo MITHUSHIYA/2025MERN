@@ -1,36 +1,97 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const navigate = useNavigate()
+
+  const [firstName, setFN] = useState("");
+  const [lastName, setLN] = useState("");
+  const [phoneNumber, setPN] = useState(0);
+  const [email, setEmail] = useState("");
+  const [password, setPass] = useState("");
+
+  const handleSignup = async (event) => {
+    event.preventDefault();
+    const req = await axios.post("http://localhost:3001/signup", {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      password: password,
+      phoneNumber: phoneNumber,
+    });
+    const message = req.data.message;
+    const isSignup = req.data.isSignup
+    if(isSignup){
+      alert(message)
+      navigate('/login')
+    }else{
+      alert(message)
+    }
+  };
+
   return (
     <div>
       <h1>Signup</h1>
-
-      <form>
-        <label for="First Name">First Name:</label>
-        <input type="text" placeholder="Enter your First Name" required />
+      <form onSubmit={handleSignup}>
+        <label htmlFor="First Name">First Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your First Name"
+          value={firstName}
+          onChange={(e) => setFN(e.target.value)}
+          id="firstName"
+          required
+        />
         <br />
-        <label for="Last Name">Last Name:</label>
-        <input type="text" placeholder="Enter your Last Name" required />
+        <label htmlFor="Last Name">Last Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your Last Name"
+          value={lastName}
+          onChange={(e) => setLN(e.target.value)}
+          id="lastName"
+          required
+        />
         <br />
-        <label for="DOB">Date of Birth:</label>
-        <input type="date" placeholder="Enter your DOB" required />
+        <label htmlFor="Ph. No.">Mobile Number:</label>
+        <input
+          type="tel"
+          placeholder="Enter your Mobile Number"
+          value={phoneNumber}
+          onChange={(e) => setPN(e.target.value)}
+          id="phoneNumber"
+          required
+        />
         <br />
-        <label for="Ph. No.">Mobile Number:</label>
-        <input type="tel" placeholder="Enter your Mobile Number" required />
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          id="email"
+          required
+        />
         <br />
-        <label for="email">Email:</label>
-        <input type="email" value="@sjit.ac.in" required />
-        <br />
-        <label for="pwd">Password:</label>
-        <input type="password" placeholder="Enter your Password" required />
-        <br />
-        <label for="cnfpwd">Confirm Password:</label>
-        <input type="password" placeholder="Enter your Password" required />
+        <label htmlFor="pwd">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          value={password}
+          onChange={(e) => setPass(e.target.value)}
+          id="password"
+          required
+        />
         <br />
         <button type="submit">Signup</button>
       </form>
-      <p>Already Have an Account ? <Link to="/login">Login</Link></p>
+      <p>
+        Already Have an Account ?{" "}
+        <button>
+          <Link to="/login">Login</Link>
+        </button>
+      </p>
     </div>
   );
 }
