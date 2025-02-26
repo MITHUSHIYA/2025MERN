@@ -50,6 +50,8 @@ app.post("/signup", async (req, res) => {
       email: email,
     });
 
+    console.log(req.body);
+
     newSignup.save();
     console.log("Signup Successful");
     res.status(201).json({ message: "Signup Successful", isSignup: true });
