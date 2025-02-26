@@ -14,7 +14,7 @@ function Signup() {
 
   const handleSignup = async (event) => {
     event.preventDefault();
-    const req = await axios.post("http://localhost:3001/signup", {
+    const req = await axios.post("https://backend-mern-xls7.onrender.com/", {
       firstName: firstName,
       lastName: lastName,
       email: email,
