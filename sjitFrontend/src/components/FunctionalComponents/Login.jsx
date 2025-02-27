@@ -11,7 +11,7 @@ function Login() {
 
   const handleLogin = async (event) => {
     event.preventDefault();
-    const req = await axios.post("http://localhost:3001/login", {
+    const req = await axios.post("https://backend-mern-xls7.onrender.com/login", {
       email: email,
       password: password,
     });
